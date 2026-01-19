@@ -21,7 +21,7 @@
             document.getElementById('room-id-display').innerText = roomId;
 
             // Підключення до твого FastAPI серверу
-            const ws = new WebSocket(`wss://my-chat.onrender.com/ws/${roomId}/${clientId}`);
+            const ws = new WebSocket(`wss://chat-1-bwxb.onrender.com/ws/${roomId}/${clientId}`);
 
             ws.onmessage = function(event) {
                 const messages = document.getElementById('messages');
